@@ -3,9 +3,11 @@ import { ToastContainer } from 'react-toastify';
 import PokemonForm from './PokemonForm';
 
 class App extends Component {
-   state = {
+
+  state = {
     pokemonName: '',
   };
+ 
 
   handleFormSubmit = pokemonName => {
     this.setState({ pokemonName });
@@ -14,9 +16,9 @@ class App extends Component {
   render() {
     return (
       <div style={{ maxWith: 1170, margin: '0 auto', padding: 20 }}>
+        
         <PokemonForm onSubmit={this.handleFormSubmit} />
-        <ToastContainer autoClose={3000}/>
-
+        <ToastContainer  />
       </div>
     );
   }

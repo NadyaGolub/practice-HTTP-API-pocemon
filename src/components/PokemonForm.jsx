@@ -18,7 +18,7 @@ class PokemonForm extends Component {
 
   handleSubmit = event => {
     if (this.state.pokemonName.trim() === '') {
-      toast('Введіть і"мя покемона');
+      toast("Введіть імя покемона")
       return;
 
       // Це означає, що якщо цей стейт pokemonName(this.state.pokemonName)
